@@ -1,0 +1,7 @@
+task invisible() << {
+	println "Hello from the invisible task"
+}
+
+task tryMe(dependsOn: invisible) << {
+	println "Hello from tryMe"
+}

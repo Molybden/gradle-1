@@ -1,0 +1,9 @@
+
+task transform() {
+	def input=file("input.txt")
+	def output=file("output.txt")
+	output.text=""
+	input.eachLine{
+		output.text+=it.replace("bra", "bäst")+"\n"
+	}
+}
