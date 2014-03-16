@@ -1,3 +1,16 @@
-task wrapper(type: Wrapper){
-	gradleVersion = '1.10'
+repositories{
+	mavenCentral()
 }
+
+configurations{
+	config1
+	config2
+}
+
+dependencies{
+	config1 group: 'junit', name: 'junit', version: '4.11'
+	config1 'junit:junit:4.10'
+	config1 'org.mockito:mockito-core:1.9.5'
+	config2 'org.testng:testng:6.8.8'
+}
+

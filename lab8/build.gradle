@@ -1,0 +1,7 @@
+//apply plugin: 'java'
+//
+//task run(type: JavaExec, dependsOn: classes) {
+//	main = 'se.molybden.courses.gradle1.lab.Example'
+//	args = ["class"]
+//	classpath sourceSets.main.runtimeClasspath
+//}

@@ -1,7 +1,4 @@
-task invisible() << {
-	println "Hello from the invisible task"
+task wrapper(type: Wrapper){
+	gradleVersion = '1.10'
 }
 
-task tryMe(dependsOn: invisible) << {
-	println "Hello from tryMe"
-}

@@ -1,11 +1,11 @@
+task invisible() << {
+	println "Hello from the invisible task"
+}
 
-task transform() {
-	def input=file("input.txt")
-	def output=file("output.txt")
-	doLast{
-		output.text=""
-		input.eachLine{
-			output.text+=it.replace("bra", "bäst")+"\n"
-		}
-	}
+task thisTaskNameIslong(dependsOn: invisible) << {
+	println "Hello from task1"
+}
+
+task anotherVeryLongTaskname(dependsOn: invisible) << {
+	println "Hello from task2"
 }

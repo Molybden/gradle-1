@@ -1,11 +1,8 @@
-task invisible() << {
-	println "Hello from the invisible task"
-}
-
-task thisTaskNameIslong(dependsOn: invisible) << {
+task task1() << {
 	println "Hello from task1"
 }
 
-task anotherVeryLongTaskname(dependsOn: invisible) << {
+task task2() << {
 	println "Hello from task2"
 }
+

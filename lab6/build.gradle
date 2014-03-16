@@ -1,1 +1,13 @@
-//apply plugin: 'java'
+
+task transform() {
+	def input=file("input.txt")
+	def output=file("output.txt")
+	//inputs.file(input)
+	//outputs.file(output)
+	doLast{
+		output.text=""
+		input.eachLine{
+			output.text+=it.replace("bra", "bäst")+"\n"
+		}
+	}
+}
