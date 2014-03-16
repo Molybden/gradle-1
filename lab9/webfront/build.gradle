@@ -1,0 +1,6 @@
+println "Adding jetty plugin to '$project.name'"
+apply plugin: 'jetty'
+
+dependencies{
+	compile project(':backend')
+}
